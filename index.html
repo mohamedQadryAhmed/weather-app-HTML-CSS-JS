@@ -4,21 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100;0,400;0,500;0,700;1,200&family=Work+Sans:wght@200;300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Weather</title>
   </head>
   <body>
-    <p class="border p-2 m-5 fs-1">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iusto
-      quisquam non quidem, facere voluptas eaque tempore illum atque porro odit
-      perspiciatis. Ut perferendis enim fugiat deserunt quasi animi debitis?
-    </p>
+    <div class="weather-app">
+      <div class="container">
+        <h3 class="brand">Q Weather</h3>
+        <div>
+          <h1 class="temp">16&#176;</h1>
+          <div class="city-time">
+            <h1 class="city-name">London</h1>
+            <small>
+              <span class="city-time">06:09</span>
+              -
+              <span class="date"> Mon sep 19 </span>
+            </small>
+          </div>
+          <div class="weather">
+            <img
+              src="./assets/images/icons/113.png"
+              alt="icon"
+              width="50"
+              height="50"
+              class="icon"
+            />
+            <span class="status">Cloudy</span>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <form class="loacation-input">
+          <input type="text" class="search" placeholder="Location ..." />
+          <button type="submit" class="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <ul class="cities">
+            <li>Cairo</li> 
+            <li>Paris</li>
+            <li>London</li>
+            <li>Tokyo</li>
+        </ul>
+
+        <ul class="weather-details">
+            <h4>Weather Details</h4>
+            <li>
+                <span>Cloudy</span>
+                <span class="cloudy">89%</span>
+            </li>
+            <li>
+                <span>Humidity</span>
+                <span class="humidity">65%</span>
+            </li>
+            <li>
+                <span>Wind</span>
+                <span class="wind">12 km/h</span>
+            </li>
+            
+        </ul>
+      </div>
+    </div>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
