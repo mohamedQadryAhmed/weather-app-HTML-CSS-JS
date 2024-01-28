@@ -15,7 +15,7 @@ h1 , h2 {
 
 .weather-app {
     min-height: 100vh;
-    background-image: url(../images/gray-clouds.jpg);
+    background-image: url(../images/day/cloudy.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,7 +47,7 @@ h1 , h2 {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
-    padding: 2em 3em 4em;
+    padding: 2em 3em 4em 3em;
 }
 
 .container > div {
@@ -80,7 +80,7 @@ h1 , h2 {
 
 .panel {
     position: absolute;
-    width: 40%;
+    width: 35%;
     height: 100%;
     top: 0;
     right: 0;
@@ -158,7 +158,7 @@ h1 , h2 {
     color: #fff;
 }
 
-.details li {
+.weather-details li {
     display: flex;
     justify-content: space-between;
     align-items: center;
